@@ -1,0 +1,28 @@
+- github , Create a new repository
+
+- local new folder create
+
+- git bash here
+
+- git init
+
+- 파일 없는경우-> 폴더 내 바로 생성: touch <파일명><확장자>
+  EX) touch plz.md 
+- 개별파일 add) git add <파일명><확장자> , EX) git add piz.md
+  여러파일 선택 add) git add <파일명1><확장자> <파일명2><확장자> <파일명3><확장자>
+  폴더 내 모든 파일 add) git add .       , EX) git add .
+
+- git commit -m <"코멘트">,  EX) git commit -m "practice"
+
+- 생략가능/ commit 코멘트 약식 보여주는 명령어, git log --oneline
+
+- git remote add origin <레포url>, 
+  EX) git remote add origin https://github.com/bominoh/plz.git
+
+- 생략가능 / remote url 재확인, git remote -v
+
+- github 업로드, git push origin master
+
+- github 레포->업로드 확인
+
+ 

@@ -1,0 +1,9 @@
+
+- Create folder to clone file
+- Clone someone code url
+- git bash here
+- git init
+- git clone <상대방URL> , 
+  EX) git clone https://github.com/edujihye/Basic.git
+- 받은 파일로 이동, EX) cd Basic/
+- 최신버전 다운로드, git pull origin master

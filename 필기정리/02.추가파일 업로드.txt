@@ -1,0 +1,6 @@
+
+
+- git add <추가파일명><확장자>
+- git commit -m <"코멘트">
+- (한번 확인)git log --oneline
+- git push origin master

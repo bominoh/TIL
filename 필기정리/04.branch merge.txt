@@ -1,0 +1,105 @@
+
+
+==============================================================================
+
+- 전제: 브랜치 할 파일 존재, EX) index.html
+- 현재 브랜치 확인, git branch
+  => 기본 master branch 출력(현재)
+- 브랜치 추가, git branch <추가할 브랜치 이름>, EX) git branch sunny
+- 재확인, git branch, EX) master / sunny 2가지 브랜치 출력
+- visual studio code로 수정, code
+
+- 수정파일 존재폴더 open
+- $ 표시 생성, 오른쪽 아래화살표 Git bash 클릭
+- html 불러오기, ! 입력
+- <title> Documents </title> 이름변경, EX) <title> 오보민 </title>
+
+- 브랜치 종류 확인, git branch
+- (git status)
+- git add <add할 파일명><확장자>, EX) git add index.html
+- (git status)
+- 선택 브랜치 파일 생성, git checkout <manager>, EX) git checkout master
+- git commit -m "코멘트", EX) git commit -m "Add master branch"
+- git push origin <manager>, EX) git push origin master
+
+==============================================================================
+(수정)
+- 수정브랜치 접속, git checkout <other manager>, EX) git checkout sunny
+- html내에서 수정~~~
+- 수정파일 add, git add <파일명><확장자>, EX) git add index.html
+- git commit -m <"코멘트">, EX) git commit -m "sunny"
+
+(원본 수정)
+- 원본파일 보기, git checkout <manager>, EX) git checkout master
+- html내에서 수정~~~
+- 원본파일 add, git add <파일명><확장자> , EX) git add index.html
+- (git status)
+- git commit -m <"코멘트">, EX) git commit -m "master"
+
+(수정본+원본 merge), ex) master 에 sunny 을 합침
+- git merge < other manager > , EX) git merge sunny
+ => 에러발생
+- merge파일 수정, vi <파일명><확장자>, EX) vi index.html
+  => >> // == 이런표시는 지워주기 (화살표 상하좌우 스크롤 해야함)
+  ( : i ,입력(insert) )
+  => esc 누른 후 , :wq 입력(종료)
+- 상태확인, git status
+  => 'both added' 상태
+- 합체본 add, git add <파일명><확장자>, EX) git add index.html
+- git commit -m <"코멘트"> , EX) git commit -m "from sunny to master"
+- (git log --oneline)
+- manager 브랜치에 업로드, git push origin <manager>, EX) git push origin master
+ 
+==============================================================================
+
+(다른 브랜치에서 재수정)
+- git checkout <other manager> , EX) git checkout sunny
+-  html내에서 수정~~~
+- 수정 add, git add <파일명><확장자>, EX) git add index.html
+- git commit -m <'코멘트'>, EX) git commit -m "sunny+1"
+- 업로드, git push origin <other manager>, EX) git push origin sunny
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

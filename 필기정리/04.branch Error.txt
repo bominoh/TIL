@@ -1,0 +1,36 @@
+===================================================================
+
+- branch 종류확인, git branch
+- branch 이동, git checkout <other manager> , EX) git checkout sunny
+
+## 에러발생 ## 
+ => error: Your local changes to the following files would be overwritten by checkout: index.html
+ Please commit your changes or stash them before you switch branches.
+ => 오류) 브랜치 파일 충돌 
+ => 해결방법) 
+ - 임시저장소?, git stash
+ - 브랜치 임시저장소 넣기?, git checkout <other manager>, EX) git checkout sunny
+ - 브랜치 삭제, git stash pop
+ - 다시 임시저장소에서 불러오기, git stash && git checkout <other manager> && git stash pop
+  EX)git stash && git checkout sunny && git stash pop
+ - 브랜치 변경확인, git checkout <other manager>, git checkout sunny
+
+=========================================================================
+
+# 윗단계 후 merge 에러
+
+=> error: you need to resolve your current index first
+   index.html: needs merge
+
+- git reset --merge
+- 브랜치 재확인, git checkout <other manager>, EX) git checkout sunny
+
+- 브랜치 원본이동, git checkout <manager> , EX) git checkout master
+- 브랜치 재merge, git merge <other manager>, EX) git merge sunny
+- 브랜치 수정, vi <파일명><확장자>, EX) vi index.html
+  : terminal 에서 수정해야함
+  : i
+  => :wq (종료)
+- git add <index.html>
+- git commit -m <"sunny+1">
+- 업로드, git push origin <manager> , EX) git push origin <master>
